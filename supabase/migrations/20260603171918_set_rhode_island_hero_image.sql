@@ -1,0 +1,1 @@
+UPDATE state_census_data SET hero_image = 'https://cdn.pixabay.com/photo/2026/06/03/17/15/17-15-42-654_1280.jpg' WHERE abbr = 'RI';

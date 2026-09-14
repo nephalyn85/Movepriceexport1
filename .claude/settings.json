@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /tmp/cc-agent/64926178/project && npm run build 2>&1 && npx vercel build --prod --token=vcp_4PdjgZVbCMi0HigoxjAxc6nuoWvLSxFPdBAo5x9uru3UcDcGzR0R9Gqd --yes 2>&1 && npx vercel --prebuilt --prod --token=vcp_4PdjgZVbCMi0HigoxjAxc6nuoWvLSxFPdBAo5x9uru3UcDcGzR0R9Gqd --yes 2>&1",
+            "timeout": 120,
+            "statusMessage": "Building and deploying to move-price.com..."
+          }
+        ]
+      }
+    ]
+  }
+}
